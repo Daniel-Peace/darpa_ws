@@ -9,6 +9,8 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/pacodataco/Documents/darpa/darpa_ws/catkin_ws/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/pacodataco/Documents/darpa/darpa_ws/catkin_ws/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/pacodataco/Documents/darpa/darpa_ws/catkin_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/pacodataco/Documents/darpa/darpa_ws/catkin_ws/build'
+export PYTHONPATH="/home/pacodataco/Documents/darpa/darpa_ws/catkin_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES='/home/pacodataco/Documents/darpa/darpa_ws/catkin_ws/devel/share/common-lisp'
 export ROS_PACKAGE_PATH="/home/pacodataco/Documents/darpa/darpa_ws/catkin_ws/src:$ROS_PACKAGE_PATH"

@@ -8,16 +8,19 @@ find_package(catkin REQUIRED COMPONENTS message_generation std_msgs sensor_msgs)
 
 add_message_files(
   FILES
-    #   Injury_report.msg
-    #   Injury_report_response.msg
-    #   Status.msg
-    #   Remaining_reports.msg
-    #   Critical.msg
-    #   Critical_report.msg
-    #   Vitals.msg
-    #   Injury.msg
-    Prediction.msg 
-    Prediction_element.msg 
+  Critical.msg
+  Critical_report.msg
+  Critical_report_response.msg
+  Injury.msg
+  Injury_report.msg
+  Injury_report_response.msg
+  Prediction.msg 
+  Prediction_element.msg
+  Remaining_reports.msg
+  Status.msg
+  Vitals.msg
+  Vitals_report.msg
+  Vitals_report_response.msg
 )
 
 include_directories(
