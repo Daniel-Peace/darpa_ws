@@ -95,30 +95,30 @@ def post_critical_report(r):
     # printing formatted report
     print_json_report(r)
 
-    # sending post request
-    response = requests.post(critical_url, headers = json_headers, json = report)
+    # # sending post request
+    # response = requests.post(critical_url, headers = json_headers, json = report)
 
-    print(response.json())
+    # print(response.json())
 
-    # creating ros msg for response
-    report_response = Critical_report_response()
+    # # creating ros msg for response
+    # report_response = Critical_report_response()
 
-    # initializing message
-    report_response.run                  = response.run
-    report_response.team                 = response.team
-    report_response.user                 = response.user
-    report_response.system               = response.system
-    report_response.clock                = response.clock
-    report_response.report_id            = response.report_id
-    report_response.report_timestamp     = response.report_timestamp
-    report_response.reports_remaining    = response.reports_remaining
-    report_response.report_status        = response.report_status
-    report_response.casualty_id          = response.casualty_id
-    report_response.type                 = response.type
-    report_response.value                = response.value
+    # # initializing message
+    # report_response.run                  = response.run
+    # report_response.team                 = response.team
+    # report_response.user                 = response.user
+    # report_response.system               = response.system
+    # report_response.clock                = response.clock
+    # report_response.report_id            = response.report_id
+    # report_response.report_timestamp     = response.report_timestamp
+    # report_response.reports_remaining    = response.reports_remaining
+    # report_response.report_status        = response.report_status
+    # report_response.casualty_id          = response.casualty_id
+    # report_response.type                 = response.type
+    # report_response.value                = response.value
 
-    # publishing response to injury report
-    critical_response_pub.publish(report_response)
+    # # publishing response to injury report
+    # critical_response_pub.publish(report_response)
 
 # posts a vitals report
 def post_vitals_report(r):
@@ -139,31 +139,31 @@ def post_vitals_report(r):
     # printing formatted report
     print_json_report(r)
 
-    # sending post request
-    response = requests.post(vitals_url, headers = json_headers, json = report)
+    # # sending post request
+    # response = requests.post(vitals_url, headers = json_headers, json = report)
 
-    print(response.json())
+    # print(response.json())
 
-    # creating ros msg for response
-    report_response = Vitals_report_response()
+    # # creating ros msg for response
+    # report_response = Vitals_report_response()
 
-    # initializing message
-    report_response.run                  = response.run
-    report_response.team                 = response.team
-    report_response.user                 = response.user
-    report_response.system               = response.system
-    report_response.clock                = response.clock
-    report_response.report_id            = response.report_id
-    report_response.report_timestamp     = response.report_timestamp
-    report_response.reports_remaining    = response.reports_remaining
-    report_response.report_status        = response.report_status
-    report_response.casualty_id          = response.casualty_id
-    report_response.type                 = response.type
-    report_response.value                = response.value
-    report_response.time_ago             = response.time_ago
+    # # initializing message
+    # report_response.run                  = response.run
+    # report_response.team                 = response.team
+    # report_response.user                 = response.user
+    # report_response.system               = response.system
+    # report_response.clock                = response.clock
+    # report_response.report_id            = response.report_id
+    # report_response.report_timestamp     = response.report_timestamp
+    # report_response.reports_remaining    = response.reports_remaining
+    # report_response.report_status        = response.report_status
+    # report_response.casualty_id          = response.casualty_id
+    # report_response.type                 = response.type
+    # report_response.value                = response.value
+    # report_response.time_ago             = response.time_ago
 
-    # publishing response to injury report
-    vitals_response_pub.publish(report_response)
+    # # publishing response to injury report
+    # vitals_response_pub.publish(report_response)
 
 # posts a injury report
 def post_injury_report(r):
@@ -183,30 +183,30 @@ def post_injury_report(r):
     # printing formatted report
     print_json_report(r)
 
-    # sending post request
-    response = requests.post(injury_url, headers = json_headers, json = report)
+    # # sending post request
+    # response = requests.post(injury_url, headers = json_headers, json = report)
 
-    print(response.json())
+    # print(response.json())
 
-    # creating ros msg for response
-    injury_report_response = Injury_report_response()
+    # # creating ros msg for response
+    # injury_report_response = Injury_report_response()
 
-    # initializing message
-    injury_report_response.run                  = response.run
-    injury_report_response.team                 = response.team
-    injury_report_response.user                 = response.user
-    injury_report_response.system               = response.system
-    injury_report_response.clock                = response.clock
-    injury_report_response.report_id            = response.report_id
-    injury_report_response.report_timestamp     = response.report_timestamp
-    injury_report_response.reports_remaining    = response.reports_remaining
-    injury_report_response.report_status        = response.report_status
-    injury_report_response.casualty_id          = response.casualty_id
-    injury_report_response.type                 = response.type
-    injury_report_response.value                = response.value
+    # # initializing message
+    # injury_report_response.run                  = response.run
+    # injury_report_response.team                 = response.team
+    # injury_report_response.user                 = response.user
+    # injury_report_response.system               = response.system
+    # injury_report_response.clock                = response.clock
+    # injury_report_response.report_id            = response.report_id
+    # injury_report_response.report_timestamp     = response.report_timestamp
+    # injury_report_response.reports_remaining    = response.reports_remaining
+    # injury_report_response.report_status        = response.report_status
+    # injury_report_response.casualty_id          = response.casualty_id
+    # injury_report_response.type                 = response.type
+    # injury_report_response.value                = response.value
 
-    # publishing response to injury report
-    injury_response_pub.publish(injury_report_response)
+    # # publishing response to injury report
+    # injury_response_pub.publish(injury_report_response)
 
 #listens for status messages and registers a callback function for the injury 
 def listener():
