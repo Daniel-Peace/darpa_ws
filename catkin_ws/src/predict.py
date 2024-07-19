@@ -15,7 +15,7 @@ def run_predictor():
     # running node until user terminates the process
     while not rospy.is_shutdown():
         # initializing yoloV8 model
-        model = YOLO("/home/pacodataco/runs/detect/yolov8n_custom/weights/best.pt")
+        model = YOLO("./yoloV8_weights/best.pt")
 
         # getting image path from user
         image_path = input("Enter a path to an image:\n")
